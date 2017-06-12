@@ -26,5 +26,14 @@ namespace ComicBookGallery.Controllers
 
             return View();
         }
+
+        public ActionResult Teste()
+        {
+            ViewBag.Message = "Your teste page.";
+
+            return View();
+        }
+
+
     }
 }
