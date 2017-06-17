@@ -13,6 +13,13 @@ namespace ComicBookGallery.Controllers
             return View();
         }
 
+        public ActionResult Detail()
+        {
+            ViewBag.Message = "Your detail page.";
+
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
