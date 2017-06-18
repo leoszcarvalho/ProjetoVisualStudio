@@ -1,8 +1,10 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 
-    var seriesTitle = "The Amazing Spider-Man";
-    var issueNumber = 700;
+    ViewBag.Title = "Titulo da página";
+
+    //var seriesTitle = "The Amazing Spider-Man";
+    //var issueNumber = 700;
     var description = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>";
     var artists = new string[]
     {
@@ -15,22 +17,14 @@
 
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
         <p>
             <b>Series Title: </b>
-            @seriesTitle
+            @ViewBag.SeriesTitle
         </p>
         <p>
             <b>Issue Number: </b>
-            @issueNumber
+            @ViewBag.IssueNumber
         </p>
         <p>
             <b>Description: </b>
@@ -50,7 +44,3 @@
             </ul>
         </p>
         }
-
-    </div>
-</body>
-</html>
